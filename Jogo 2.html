@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogoStyle.css">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+
+<script>
+
+$(document).ready (() =>{
+        var hit = 0
+        var misses = 0
+
+        $("#belgica").click (() => {
+            $("#belgica").css("background-color", "green");
+            hit++;
+            console.log("Acertos = " + hit);
+        })
+        $ ("#alemanha").click (()=>{
+            $("#alemanha").css("background-color", "red");
+            misses++;
+            console.log ("Erros = " + misses);
+        })
+
+        $ ("#andorra").click (()=>{
+            $("#andorra").css("background-color", "red");
+            misses++;
+            console.log ("Erros = " + misses);
+        })
+
+    })
+
+    
+</script>
+<body>
+
+    <h1>WHAT IS THE FLAG? </h1>
+    <img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px">
+    <div class="j-container">
+    <header class="j-header">1</header>
+    <main class="j-main">2</main>
+    <aside class="j-aside">3</aside>
+    <footer class="j-footer"> 
+<button id="alemanha">ALEMANHA</button>
+<button id="belgica">BÉLGICA</button>
+<button id="andorra">ANDORRA</button>
+</footer></div>
+
+
+
+
+
+   
+</body>
+</html>
