@@ -14,22 +14,35 @@
 $(document).ready (() =>{
         var hit = 0
         var misses = 0
+        var misses2 = 0
 
         $("#belgica").click (() => {
             $("#belgica").css("background-color", "green");
             hit++;
             console.log("Acertos = " + hit);
+
+            if (hit==1) {alert ("CORRETO")}
+            else if (hit==2){alert ("ERRO! Opção inválida.")
+
+}
+            
         })
         $ ("#alemanha").click (()=>{
             $("#alemanha").css("background-color", "red");
             misses++;
             console.log ("Erros = " + misses);
+            if (misses==1) {alert ("INCORRETO")} else if (misses==2){alert ("ERRO! Opção inválida.")
+
+            }
         })
 
         $ ("#andorra").click (()=>{
             $("#andorra").css("background-color", "red");
-            misses++;
-            console.log ("Erros = " + misses);
+            misses2++;
+            console.log ("Erros = " + misses2);
+            if (misses2==1) {alert ("INCORRETO")} else if (misses2==2){alert ("ERRO! Opção inválida.")
+
+}
         })
 
     })
@@ -39,11 +52,11 @@ $(document).ready (() =>{
 <body>
 
     <h1>WHAT IS THE FLAG? </h1>
-    <img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px">
+    <a href="Jogo 3.html"><img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px"></a>
     <div class="j-container">
-    <header class="j-header">1</header>
-    <main class="j-main">2</main>
-    <aside class="j-aside">3</aside>
+    <header class="j-header"></header>
+    <main class="j-main"></main>
+    <aside class="j-aside"></aside>
     <footer class="j-footer"> 
 <button id="alemanha">ALEMANHA</button>
 <button id="belgica">BÉLGICA</button>

@@ -6,8 +6,11 @@
 
 }
 
+
+
 h1 {font-family:cursive; position: absolute; top: 47px; left: 403px;}
 
+body {background-color: teal;}
 .j-header {grid-area: header; background-color: black;}
 .j-main {grid-area: main; background-color: yellow;}
 .j-aside {grid-area: aside; background-color: red;}
@@ -17,6 +20,6 @@ h1 {font-family:cursive; position: absolute; top: 47px; left: 403px;}
 #seta {position: absolute; top: 41px; left: 1263px;}
 
 button:hover {background-color: cornflowerblue; cursor: pointer;}
-#alemanha {height: 68px; width: 130px; position: absolute; top: 414px; left: 53px; border-radius: 50px; font-family:Arial, Helvetica, sans-serif}
-#belgica {height: 68px; width: 130px; position: absolute; top: 414px; left: 315px; border-radius: 50px;}
-#andorra {height: 68px; width: 130px; position: absolute; top: 414px; left: 574px; border-radius: 50px;}
+#alemanha {height: 68px; width: 130px; position: absolute; top: 414px; left: 53px; border-radius: 50px; font-family:Arial, Helvetica, sans-serif; border-color: white; }
+#belgica {height: 68px; width: 130px; position: absolute; top: 414px; left: 315px; border-radius: 50px; border-color: white; }
+#andorra {height: 68px; width: 130px; position: absolute; top: 414px; left: 574px; border-radius: 50px;border-color: white; }
