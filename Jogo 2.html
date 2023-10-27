@@ -24,7 +24,8 @@ $(document).ready (() =>{
             if (hit==1) {alert ("CORRETO")}
             else if (hit==2){alert ("ERRO! Opção inválida.")
 
-}
+} if (hit==1) {$ ("#c01").html(hit)};   
+       
             
         })
         $ ("#alemanha").click (()=>{
@@ -33,7 +34,7 @@ $(document).ready (() =>{
             console.log ("Erros = " + misses);
             if (misses==1) {alert ("INCORRETO")} else if (misses==2){alert ("ERRO! Opção inválida.")
 
-            }
+            }if (misses==1) {$ ("#c00").html(misses+misses2)};
         })
 
         $ ("#andorra").click (()=>{
@@ -42,7 +43,7 @@ $(document).ready (() =>{
             console.log ("Erros = " + misses2);
             if (misses2==1) {alert ("INCORRETO")} else if (misses2==2){alert ("ERRO! Opção inválida.")
 
-}
+}if (misses2==1) {$ ("#c00").html(misses+misses2)};
         })
 
     })
@@ -51,19 +52,34 @@ $(document).ready (() =>{
 </script>
 <body>
 
+
     <h1>WHAT IS THE FLAG? </h1>
+   
     <a href="Jogo 3.html"><img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px"></a>
+    <a href="/"><img id="seta2" src="duas-setas-para-a-esquerda.png" alt="Seta de Retorno" height="40px" width="40px"></a>
+   
     <div class="j-container">
+   
     <header class="j-header"></header>
+  
     <main class="j-main"></main>
+   
     <aside class="j-aside"></aside>
-    <footer class="j-footer"> 
+    
+    <footer class="j-footer">  
+
 <button id="alemanha">ALEMANHA</button>
 <button id="belgica">BÉLGICA</button>
 <button id="andorra">ANDORRA</button>
+
 </footer></div>
 
-
+<table id="dashboard">
+    <tr class="row">
+        <label id="pontos">PONTUAÇÃO</label>
+        <td id="c00"></td>
+        <td id="c01"></td>
+    </tr></table>
 
 
 

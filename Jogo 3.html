@@ -10,6 +10,11 @@
 </head>
 <script>
 
+
+
+
+
+
 $(document).ready (() =>{
         var hit = 0
         var misses = 0
@@ -23,7 +28,7 @@ $(document).ready (() =>{
             if (hit==1) {alert ("CORRETO")}  else if (hit==2){alert ("ERRO! Opção inválida.")
 
 }
-            
+         if (hit==1) {$ ("#c01").html(hit)};   
         })
         $ ("#finlandia").click (()=>{
             $("#finlandia").css("background-color", "red");
@@ -31,7 +36,7 @@ $(document).ready (() =>{
             console.log ("Erros = " + misses);
             if (misses==1) {alert ("INCORRETO")} else if (misses==2){alert ("ERRO! Opção inválida.")
 
-}
+} if (misses==1) {$ ("#c00").html(misses+misses2)};
         })
 
         $ ("#suiça").click (()=>{
@@ -40,7 +45,7 @@ $(document).ready (() =>{
             console.log ("Erros = " + misses2);
             if (misses2==1) {alert ("INCORRETO")} else if (misses2==2){alert ("ERRO! Opção inválida.")
 
-}
+} if (misses2==1) {$ ("#c00").html(misses+misses2)};
         })
 
     })
@@ -48,6 +53,8 @@ $(document).ready (() =>{
 
 </script>
 <body>
+
+
 
     <h1>WHAT IS THE FLAG?</h1>
 
@@ -64,6 +71,14 @@ $(document).ready (() =>{
     <button id="suiça">SUÍÇA</button>
 <button id="finlandia">FINLÂNDIA</button>
 <button id="dinamarca">DINAMARCA</button>
+
+
+<table id="dashboard">
+    <tr class="row">
+        <label id="pontos">PONTUAÇÃO</label>
+        <td id="c00"></td>
+        <td id="c01"></td>
+    </tr></table>
 
 </body>
 </html>
