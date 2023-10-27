@@ -25,8 +25,9 @@ $(document).ready (() =>{
             hit++;
             console.log("Acertos = " + hit);
 
-            if (hit==1) {alert ("CORRETO")}  else if (hit==2){alert ("ERRO! Opção inválida.")
-
+            if (hit==1) {alert ("CORRETO") 
+            $("#seta_2quest").attr ("href", "Jogo 4.html")}  else if (hit==2){alert ("ERRO! Opção inválida.")
+            
 }
          if (hit==1) {$ ("#c01").html(hit)};   
         })
@@ -72,6 +73,8 @@ $(document).ready (() =>{
 <button id="finlandia">FINLÂNDIA</button>
 <button id="dinamarca">DINAMARCA</button>
 
+<a id="seta_2quest"><img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px"></a>
+<a href="Jogo 2.html"><img id="seta2" src="duas-setas-para-a-esquerda.png" alt="Seta de Retorno" height="40px" width="40px"></a>
 
 <table id="dashboard">
     <tr class="row">

@@ -12,19 +12,31 @@
 <script>
 
 $(document).ready (() =>{
+
+
+        
+    
         var hit = 0
         var misses = 0
         var misses2 = 0
+       
 
         $("#belgica").click (() => {
             $("#belgica").css("background-color", "green");
             hit++;
             console.log("Acertos = " + hit);
 
-            if (hit==1) {alert ("CORRETO")}
-            else if (hit==2){alert ("ERRO! Opção inválida.")
+            if (hit==1) {
+                alert ("CORRETO")
+               
+                $('#seta_q1').attr("href",'Jogo 3.html')
+            }
+            else if (hit==2){
+                alert ("ERRO! Opção inválida.")
 
 } if (hit==1) {$ ("#c01").html(hit)};   
+
+
        
             
         })
@@ -32,7 +44,9 @@ $(document).ready (() =>{
             $("#alemanha").css("background-color", "red");
             misses++;
             console.log ("Erros = " + misses);
-            if (misses==1) {alert ("INCORRETO")} else if (misses==2){alert ("ERRO! Opção inválida.")
+            if (misses==1) {alert ("INCORRETO")
+           
+        } else if (misses==2){alert ("ERRO! Opção inválida.")
 
             }if (misses==1) {$ ("#c00").html(misses+misses2)};
         })
@@ -41,12 +55,15 @@ $(document).ready (() =>{
             $("#andorra").css("background-color", "red");
             misses2++;
             console.log ("Erros = " + misses2);
-            if (misses2==1) {alert ("INCORRETO")} else if (misses2==2){alert ("ERRO! Opção inválida.")
+            if (misses2==1) {alert ("INCORRETO")
+            } else if (misses2==2){alert ("ERRO! Opção inválida.")
 
 }if (misses2==1) {$ ("#c00").html(misses+misses2)};
         })
 
     })
+
+   
 
     
 </script>
@@ -55,7 +72,7 @@ $(document).ready (() =>{
 
     <h1>WHAT IS THE FLAG? </h1>
    
-    <a href="Jogo 3.html"><img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px"></a>
+    <a id="seta_q1"><img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px"></a>
     <a href="/"><img id="seta2" src="duas-setas-para-a-esquerda.png" alt="Seta de Retorno" height="40px" width="40px"></a>
    
     <div class="j-container">
