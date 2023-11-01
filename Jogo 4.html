@@ -20,12 +20,18 @@
             hit++;
             console.log("Acertos = " + hit);
 
-            if (hit==1) {alert ("CORRETO") 
-            }  else if (hit==2){alert ("ERRO! Opção inválida.")
+            if (hit==1) {alert ("CORRETO")   
+            $("#seta_2quest").attr ("href", "Jogo 5.html")}
+        
+        else if (hit==2){alert ("ERRO! Opção inválida.")
             
-}
+        }
+    
+
          if (hit==1) {$ ("#c01").html(hit)};   
         })
+
+        
         $ ("#cuba").click (()=>{
             $("#cuba").css("background-color", "red");
             misses++;
@@ -64,5 +70,8 @@
             <td id="c00"></td>
             <td id="c01"></td>
         </tr></table>
+
+        <a id="seta_2quest"><img id="seta" src="avanco-rapido.png" alt="Seta de Avanço" height="40px" width="40px"></a>
+<a href="Jogo 3.html"><img id="seta2" src="duas-setas-para-a-esquerda.png" alt="Seta de Retorno" height="40px" width="40px"></a>
 </body>
 </html>
