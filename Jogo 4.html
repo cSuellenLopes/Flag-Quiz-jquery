@@ -10,47 +10,88 @@
 </head>
 
 <script>
-    $(document).ready (() =>{
-        var hit = 0
-        var misses = 0
-        var misses2 = 0
+   $(document).ready (() =>{
 
-        $("#tcheca").click (() => {
-            $("#tcheca").css("background-color", "green");
-            hit++;
-            console.log("Acertos = " + hit);
-
-            if (hit==1) {alert ("CORRETO")   
-            $("#seta_2quest").attr ("href", "Jogo 5.html")}
-        
-        else if (hit==2){alert ("ERRO! Opção inválida.")
-            
-        }
+var hit = 0
+    var misses = 0
     
 
-         if (hit==1) {$ ("#c01").html(hit)};   
-        })
+    $("#tcheca").click (() => {
+        $("#tcheca").css("background-color", "green");
+        hit++;
+        console.log("Acertos = " + hit);
+
+        if (hit==1) { alert ("CORRETO")
+    
+           
+            $('#seta_2quest').attr("href",'Jogo 5.html')}
+         
+        else if (hit==2){
+            alert ("ERRO! Opção inválida.")
+
+} if (hit==1) {$ ("#c01").html(hit)};    
+
+
+   
+        
+})         
+    $ ("#cuba").click (()=>{
+        $("#cuba").css("background-color", "red");
+        misses++;
+        console.log ("Erros = " + misses);
+        if (misses<=2) {alert ("INCORRETO")}
+
+        if (misses>=2) {var myTimeout = setTimeout(myUrl, 1000)
+
+
+function myUrl() { location.href = 'file:///E:/Suellen%202/Flag-Quiz-jquery-main/GameOver.html'}
+        }
+        
+        
+        
+        
+
+        if (misses<=2) {$ ("#c00").html(misses)};
+    })
+
+    $ ("#porto").click (()=>{ 
+  $("#porto").css("background-color", "red");
+        misses++;
+        console.log ("Erros = " + misses);
+        if (misses>=1) { alert ("INCORRETO")}
+
+        if (misses>=2) {var myTimeout = setTimeout(myUrl, 1000)
+
+
+function myUrl() { location.href = 'file:///E:/Suellen%202/Flag-Quiz-jquery-main/GameOver.html'}}
+
 
         
-        $ ("#cuba").click (()=>{
-            $("#cuba").css("background-color", "red");
-            misses++;
-            console.log ("Erros = " + misses);
-            if (misses==1) {alert ("INCORRETO")} else if (misses==2){alert ("ERRO! Opção inválida.")
+        
+        if (misses<=2) {$ ("#c00").html(misses)} 
 
-} if (misses==1) {$ ("#c00").html(misses+misses2)};
-        })
 
-        $ ("#porto").click (()=>{
-            $("#porto").css("background-color", "red");
-            misses2++;
-            console.log ("Erros = " + misses2);
-            if (misses2==1) {alert ("INCORRETO")} else if (misses2==2){alert ("ERRO! Opção inválida.")
 
-} if (misses2==1) {$ ("#c00").html(misses+misses2)};
-        })
 
-    })
+
+
+})
+
+})
+
+
+
+
+$(document).ready (() =>{
+
+
+$("#cuba").on("click", function(){
+  $(this).prop("disabled", true);
+})
+
+$("#porto").on("click", function(){
+  $(this).prop("disabled", true);
+}) })
 </script>
 <body>
 
