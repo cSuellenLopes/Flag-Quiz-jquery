@@ -1,0 +1,187 @@
+body {
+    background-color: teal;
+   
+}
+
+@media screen and (min-width: 601px) {
+    main {
+      font-size: 80px;
+    }
+  }
+
+.flex-containerTOP {
+    display: flex;
+   }
+
+   .flex-containerMIDDLE {
+    display: flex;
+   }
+
+   .flex-containerMIDDLE2 {
+    display: flex;
+   }
+
+   
+
+   main {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);  
+    }
+
+
+    .flex-containerTOP > #b1  {
+        background-color: blue;
+        width: 6vw;
+        height: 12vh;
+        
+       }
+
+        .flex-containerTOP > #b2  {
+            background-color: white;
+            width: 4vw;
+            height: 12vh;
+            }
+
+            .flex-containerTOP > #b3  {
+                background-color: blue;
+                width: 6vw;
+        height: 12vh;
+                }
+
+                .flex-containerTOP > #side-side  {
+                   
+                    width: 10vw;
+                    height: 10vh;
+                     }
+
+                    #side-side > #b4 {
+                        background-color: blue; width: 23vw;
+                        height: 6vh;
+                    } 
+
+                    #side-side > #b5 {
+                        background-color: white; width: 23vw;
+                        height: 6vh;
+                    } 
+
+
+                    .flex-containerMIDDLE > #b6 {
+                        width: 16vw;
+                        height: 7vh;
+                        background-color: white;
+                    }
+
+                    .flex-containerMIDDLE > #b7 {
+                        width: 23vw;
+                        height: 7vh;
+                        background-color: blue;
+                    }
+
+
+
+
+
+                    .flex-containerMIDDLE2 > #b8  {
+                        background-color: blue;
+                        width: 6vw;
+                        height: 12vh;
+                        
+                        }
+                
+                        .flex-containerMIDDLE2 > #b9  {
+                            background-color: white;
+                            width: 4vw;
+                           height: 12vh;
+                            
+ }
+                
+                            .flex-containerMIDDLE2 > #b10  {
+                                background-color: blue;
+                                width: 6vw;
+                                height: 12vh
+                                
+                            }
+                
+                                .flex-containerMIDDLE2 > #side-side2  {
+                                   
+                                    width: 10vw;
+                                    height: 10vh;
+                                   
+                                }
+                
+                                    #side-side2 > #b11 {
+                                        background-color: white;
+                                        width: 23vw;
+                                        height: 6vh;
+                                    } 
+                
+                                    #side-side2 > #b12 {
+                                        background-color: blue;
+                                        width: 23vw;
+                                        height: 6vh
+                                    } 
+
+
+
+
+
+
+                                    .flex-containerBOTTOM > #b13 {
+                                        width: 39vw;
+                                        height: 6vh;
+                                
+                                        background-color: white;
+                                    }
+                
+                                    .flex-containerBOTTOM > #b14 {
+                                        width: 39vw;
+                                        height: 6vh;
+                                        background-color: blue;
+                                    }
+
+                                    .flex-containerBOTTOM > #b15 {
+                                        width: 39vw;
+                                        height: 6vh;
+                                        background-color: white;
+                                    }
+                
+                                    .flex-containerBOTTOM > #b16 {
+                                        width: 39vw;
+                                        height: 6vh;
+                                        background-color: blue;
+                                    }
+
+                                    #seta {position: absolute; top: 637px; left: 1390px;}
+                                    #seta2 {position: absolute; top: 39px; left: 155px;}
+                                    
+                                    #flag-container {position: absolute; top: 68px; left: 230px;}
+
+
+
+                                    table { border-collapse: collapse;
+                                        border-spacing: 0;
+                                        position: absolute;
+                                        top: 10px;
+                                        left: 1287px;
+                                    
+                                    }
+                                    
+                                    #c00 {
+                                    
+                                        width: 80px; height: 80px; border: 1px solid red; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        text-align: center;
+                                    }
+                                    #c01 {width: 80px; height: 80px; border: 1px solid lime; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        text-align: center;}
+                                    
+                                        #pontos {position: absolute;
+                                            top: 39px;
+                                            left: 1131px;
+                                        font-size: larger;
+                                    font-family: cursive;}
+                                    
+                                    .Cbutton {position: absolute; top: 4vh; left: 3vw;}
+
+
+                                    button:hover {background-color: cornflowerblue;}
+                     #liberia {height: 68px; width: 130px; position: absolute; top: 608px; left: 467px; border-radius: 50px; border-color: white; }
+                     #equador {height: 68px; width: 130px; position: absolute; top: 608px; left: 932px; border-radius: 50px;border-color: white; }
+                     #grecia {height: 68px; width: 130px; position: absolute; top: 608px; left: 709px; border-radius: 50px;border-color: white; }
